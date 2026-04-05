@@ -8,6 +8,14 @@
             box-sizing: border-box;
         }
         
+        header {
+            width: 100%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #0a1440 0%, #4299f5 50%, #003cff 100%);
