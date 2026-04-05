@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 Loan Calculator</h1>
+        
+        <form id="loanForm">
+            <div class="form-group">
+                <label for="principal">Loan Amount</label>
+                <div class="input-wrapper">
+                    <input type="number" id="principal" placeholder="Enter loan amount" min="0" step="0.01" required>
+                    <span class="unit">$</span>
+                </div>
+                <div class="error" id="principalError">Please enter a valid amount</div>
+            </div>
+    <!-- This is the annotation for the loan amount input. It includes a label, an input field with a dollar sign unit, and an error message that will be displayed if the user enters an invalid amount. The input field is of type number, allowing only numeric input, and it has validation to ensure that the value is greater than or equal to zero. -->
+            <div class="form-group">
+                <label for="rate">Annual Interest Rate</label>
+                <div class="input-wrapper">
+                    <input type="number" id="rate" placeholder="Enter interest rate" min="0" step="0.01" required>
+                    <span class="unit">%</span>
+                </div>
+                <div class="error" id="rateError">Please enter a valid rate</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="years">Loan Term</label>
+                <div class="input-wrapper">
+                    <input type="number" id="years" placeholder="Enter loan term" min="0" step="0.1" required>
+                    <span class="unit">years</span>
+                </div>
+                <div class="error" id="yearsError">Please enter a valid term</div>
+            </div>
+            
+            <button type="submit">Calculate</button>
+        </form>
+    <!-- This is the annotation for the results section. It includes labels and values for the monthly payment, total amount paid, and total interest paid. The results are initially hidden and will be displayed after the calculation is performed. -->
+        <div class="results" id="results">
+            <div class="result-item">
+                <span class="result-label">Monthly Payment</span>
+                <span class="result-value" id="monthlyPayment">$0.00</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Total Amount Paid</span>
+                <span class="result-value" id="totalPaid">$0.00</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Total Interest Paid</span>
+                <span class="result-value" id="totalInterest">$0.00</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
