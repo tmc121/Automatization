@@ -143,3 +143,11 @@
         .error.show {
             display: block;
         }
+
+        footer {
+            margin-top: 40px;
+            font-family: 'Roboto-medium', sans-serif;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+        }   
