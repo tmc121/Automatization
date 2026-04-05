@@ -13,9 +13,16 @@
             background: linear-gradient(135deg, #0a1440 0%, #4299f5 50%, #003cff 100%);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .page-content {
+            flex: 1;
+            width: 100%;
+            display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
         }
         
         .container {
@@ -145,9 +152,10 @@
         }
 
         footer {
-            margin-top: 40px;
+            width: 100%;
+            margin-top: 20px;
             font-family: 'Roboto-medium', sans-serif;
-            text-align: center , end; /* this need to put the text at the bottom of the page */
+            text-align: center;
             color: #fff;
             font-size: 14px;
         }
